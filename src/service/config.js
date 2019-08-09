@@ -1,3 +1,3 @@
-export const base = "https://www.artalliance.art/api";
+export const base = "https://192.168.1.1/";
 
-export const imgUrl = "https://artalliance.oss-cn-beijing.aliyuncs.com/";
+export const imgUrl = "https://192.168.1.1/"; //oss上传的话，此处应为oss地址

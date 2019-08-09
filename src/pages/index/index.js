@@ -24,8 +24,7 @@ class Index extends Component {
   }
 
   async componentWillMount () {
-    const res = await api.get('/common/provincelists','',false)
-    console.log(res.data)
+    // const res = await api.get('api地址','',false)
 
     const { cartStore } = this.props
     cartStore.getData()

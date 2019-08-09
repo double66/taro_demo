@@ -39,9 +39,9 @@ export async function uploadImg (filePath,type) {
     ]
   };
   //key
-  const aliyunServerURL = 'https://artalliance.oss-cn-beijing.aliyuncs.com/';//OSS地址，需要https
-  const accesskey= 'Un6ipIU28TNHJQ1SS2bahy1hEHtQGh';
-  const accessid = 'LTAIKQ7NHTWOe1Ax';
+  const aliyunServerURL = 'https://OSS地址/';//OSS地址，需要https
+  const accesskey= 'accesskey'; // accesskey
+  const accessid = 'accessid'; // accessid
   const policyBase64 = base64.encode(JSON.stringify(policyText));
   const bytes = Crypto.HMAC(Crypto.SHA1, policyBase64, accesskey, { asBytes: true }) ;
   const signature = Crypto.util.bytesToBase64(bytes);//获取签名
