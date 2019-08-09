@@ -1,0 +1,163 @@
+.index{
+  padding-bottom: 100px;
+}
+
+.edit{
+  display: flex;
+  justify-content: flex-end;
+  background: #f0f0f0;
+  .text{
+    font-size: 24px;
+    color: #333333;
+    padding:20px 30px;
+  }
+}
+
+.select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .text{
+    color: #333333;
+    font-size: 26px;
+    padding: 0 20px;
+  }
+}
+
+.shopItem{
+  background: #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.shop{
+  display: flex;
+  background: white;
+  .name{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 2;
+    color: #666;
+    .text{
+      padding-right: 40px;
+    }
+  }
+}
+
+.goods{
+  display: flex;
+  border-top: 1px solid #f0f0f0;
+  padding: 30px 0;
+  background: white;
+  .proImg{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    .img{
+      display: block;
+      width: 200px;
+      height: 200px;
+      background: mediumaquamarine;
+    }
+    .showTips{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.5);
+      .text{
+        font-size: 28px;
+        color: white;
+      }
+    }
+  }
+  .conInfo{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 0 30px;
+    .title{
+      font-size: 30px;
+      color: #333333;
+    }
+    .price{
+      color: red;
+      font-size: 24px;
+    }
+    .handle{
+      display: flex;
+      align-self: flex-end;
+      .icon{
+        width: 50px;
+        height: 50px;
+      }
+      .num{
+        width: 50px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 50px;
+        color: #999;
+      }
+    }
+  }
+}
+
+.loseGoods{
+  .conInfo{
+    .title{
+      color: #ccc;
+    }
+    .price{
+      color: #ddd;
+    }
+  }
+}
+
+.wrap_bottom{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  margin-bottom: taro-tabbar-height;
+  .center{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    font-size: 24px;
+    color: darkgray;
+    line-height: 100px;
+    .price{
+      color: red;
+      font-size: 28px;
+    }
+  }
+  .btn{
+    width: 200px;
+    color: white;
+    background: #1296db;
+    border-radius: 0;
+    &:after{
+      border: none;
+    }
+  }
+  .delete{
+    background: red;
+  }
+}
