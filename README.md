@@ -1,10 +1,27 @@
 README
 ===========================
-taro_demo  基于taro搭建基础框架    
+taro_demo  基于taro（[git地址](https://github.com/NervJS/taro)  |  [文档地址](https://nervjs.github.io/taro/docs/README.html)）搭建基础框架  
 taro+mobx
 
 ****
-## taro UI
+## 安装环境/运行命令 
+首先 确保已安装 node 环境（>=8.0.0）   
+#### cli 工具安装
+npm install -g @tarojs/cli
+
+（环境安装完成，downLoad项目到本地）
+
+#### 安装依赖
+npm install
+#### 微信小程序
+npm run dev:weapp   /  npm start
+#### H5
+npm run dev:H5
+
+
+****
+## taro UI 
+[文档地址](https://taro-ui.aotu.io/#/docs/introduction)
 ```
 // app.js
 import 'taro-ui/dist/style/index.scss' // 全局引入一次即可
